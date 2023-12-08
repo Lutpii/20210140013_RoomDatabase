@@ -1,4 +1,4 @@
-package com.example.roomsiswa.ui.Halaman
+package com.example.roomsiswa.ui.ui.halaman
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -33,10 +33,10 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.roomsiswa.R
 import com.example.roomsiswa.data.Siswa
-import com.example.roomsiswa.model.HomeViewModel
-import com.example.roomsiswa.model.PenyediaViewModel
 import com.example.roomsiswa.navigasi.DestinasiNavigasi
 import com.example.roomsiswa.navigasi.SiswaTopAppBar
+import com.example.roomsiswa.ui.model.HomeViewModel
+import com.example.roomsiswa.ui.model.PenyediaViewModel
 
 object DestinasiHome: DestinasiNavigasi {
     override val route = "home"

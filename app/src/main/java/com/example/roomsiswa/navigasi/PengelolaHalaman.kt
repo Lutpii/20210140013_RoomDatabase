@@ -17,9 +17,9 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.roomsiswa.R
 import com.example.roomsiswa.ui.Halaman.DestinasiEntry
-import com.example.roomsiswa.ui.Halaman.DestinasiHome
 import com.example.roomsiswa.ui.Halaman.EntrySiswaScreen
-import com.example.roomsiswa.ui.Halaman.HomeScreen
+import com.example.roomsiswa.ui.ui.halaman.DestinasiHome
+import com.example.roomsiswa.ui.ui.halaman.HomeScreen
 
 @Composable
 fun SiswaApp(navController: NavHostController = rememberNavController()){
@@ -42,8 +42,7 @@ fun SiswaTopAppBar(
                 IconButton(onClick = navigateUp) {
                     Icon(
                         imageVector = Icons.Filled.ArrowBack,
-                        contentDescription = stringResource(id = R.string.back)
-                    )
+                        contentDescription = stringResource(id = R.string.back))
                 }
             }
         }
