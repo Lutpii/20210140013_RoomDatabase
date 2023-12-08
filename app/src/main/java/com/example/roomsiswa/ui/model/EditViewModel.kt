@@ -19,7 +19,7 @@ class EditViewModel (
     var siswaUiState by mutableStateOf(UIStateSiswa())
         private set
 
-    private val itemId: Int = checkNotNull(savedStateHandle[ItemEditDestination.itemIdArg])
+    private val itemId: Int = 0//checkNotNull(savedStateHandle[ItemEditDestination.itemIdArg])
 
     init {
         viewModelScope.launch {
