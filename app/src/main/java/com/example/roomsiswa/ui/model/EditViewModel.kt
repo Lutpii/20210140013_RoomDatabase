@@ -29,4 +29,18 @@ class EditViewModel (
                 .toUiStateSiswa(true)
         }
     }
+
+    suspend fun updateSiswa(){
+        if (validasiInput(siswaUiState.detailSiswa)){
+            repositoriSiswa.updateSiswa(siswaUiState.detailSiswa.toSiswa())
+        }
+        else{
+            println("Data tidak valid")
+        }
+    }
+
+    fun updateUiState(detailSiswa: DetailSiswa){
+        siswaUiState =
+            UIStateSiswa(detailSiswa = detailSiswa, isEntryValid = validasiInput(detailSiswa))
+    }
 }
